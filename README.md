@@ -29,7 +29,8 @@ Schéma d'enchaînement des maquettes :
     Le parcours principal est :
     Accueil → Recherche d'offre → Consultation des résultats → Consultation du détail d'une offre → Achat / Réservation.
 
-```Accueil
+```text
+Accueil
   │
   ├── Hotels
   ├── Flights
@@ -52,7 +53,8 @@ Résultats
   ↓
 Détail de l'offre
   ↓
-Achat / Réservation```
+Achat / Réservation
+```
 
 
 
