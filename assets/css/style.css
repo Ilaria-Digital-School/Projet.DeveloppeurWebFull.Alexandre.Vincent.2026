@@ -9,6 +9,11 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
+
+    /* Sticky Footer */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -85,6 +90,9 @@ ul {
 #main-content {
     min-height: 60vh;
     padding: 60px 5%;
+
+     /* Prendre l'espace disponible */
+    flex: 1;
 }
 
 #offers {
@@ -116,8 +124,15 @@ ul {
     max-width: 1200px;
 }
 
-h4 {
-    font-size: 1.4rem;
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    width: auto;
+    margin-bottom: 1rem;
 }
 
 .form-control {

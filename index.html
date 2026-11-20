@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Book Your Travel, Your go too to find every trip you have dreamed of !">
+    <meta name="description"
+        content="Book Your Travel helps you find and book hotels, flights, cruises and car rentals worldwide. Discover amazing destinations and exclusive travel deals today.">
     <meta name="robots" content="index, follow">
     <title>Book Your Travel</title>
 
@@ -59,7 +60,7 @@
                         <li class="nav-item"><a href="pages/purchase.html">Purchase</a></li>
                     </ul>
                 </div>
-            </div>  
+            </div>
         </nav>
     </header>
 
@@ -130,93 +131,99 @@
 
                     <!-- What -->
                     <div class="col-lg-3 border-end">
-                        <h2><span class="text-info fw-bold">01</span> What?</h2>
 
-                        <div class="row mt-3">
-                            <div class="col-6">
-                                
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="travel" id="hotel">
-                                    <label class="form-check-label" for="hotel">Hotel</label>
+                        <fieldset class="border-0 p-0 m-0">
+
+                            <legend class="h2 mb-3">
+                                <span class="text-primary fw-bold">01</span> What?
+                            </legend>
+
+                            <div class="row mt-3">
+
+                                <div class="col-6">
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="travel" id="hotel">
+                                        <label class="form-check-label" for="hotel">Hotel</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="travel" id="flight">
+                                        <label class="form-check-label" for="flight">Flight</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="travel" id="flightHotel">
+                                        <label class="form-check-label" for="flightHotel">Flight & Hotel</label>
+                                    </div>
                                 </div>
 
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="travel" id="flight">
-                                    <label class="form-check-label" for="flight">Flight</label>
-                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="travel" id="selfCatering">
+                                        <label class="form-check-label" for="selfCatering">Self Catering</label>
+                                    </div>
 
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="travel" id="flightHotel">
-                                    <label class="form-check-label" for="flightHotel">Flight & Hotel</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="travel" id="cruise">
+                                        <label class="form-check-label" for="cruise">Cruise</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="travel" id="rentCar">
+                                        <label class="form-check-label" for="rentCar">Rent a Car</label>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="col-6">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="travel" id="selfCatering">
-                                    <label class="form-check-label" for="selfCatering">Self Catering</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="travel" id="cruise">
-                                    <label class="form-check-label" for="cruise">Cruise</label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="travel" id="rentCar">
-                                    <label class="form-check-label" for="rentCar">Rent a Car</label>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <!-- Where -->
                     <div class="col-lg-3 border-end">
-                        <h2><span class="text-info fw-bold">02</span> Where?</h2>
+                        <h2><span class="text-primary fw-bold">02</span> Where?</h2>
 
-                        <label class="form-label fw-bold mt-3">
+                        <label class="form-label fw-bold mt-3" for="destination">
                             Your destination
                         </label>
 
                         <input type="text" class="form-control rounded-pill"
-                            placeholder="City, region, district or specific hotel">
+                            placeholder="City, region, district or specific hotel" id="destination">
                     </div>
 
                     <!-- When -->
                     <div class="col-lg-3 border-end">
-                        <h2><span class="text-info fw-bold">03</span> When?</h2>
+                        <h2><span class="text-primary fw-bold">03</span> When?</h2>
 
                         <div class="row mt-3">
                             <div class="col-6">
-                                <label class="form-label">Check-in</label>
-                                <input type="date" class="form-control rounded-pill">
+                                <label class="form-label" for="arrival">Check-in</label>
+                                <input type="date" class="form-control rounded-pill" id="arrival">
                             </div>
 
                             <div class="col-6">
-                                <label class="form-label">Check-out</label>
-                                <input type="date" class="form-control rounded-pill">
+                                <label class="form-label" for="departure">Check-out</label>
+                                <input type="date" class="form-control rounded-pill" id="departure">
                             </div>
                         </div>
                     </div>
 
                     <!-- Who -->
                     <div class="col-lg-3">
-                        <h2><span class="text-info fw-bold">04</span> Who?</h2>
+                        <h2><span class="text-primary fw-bold">04</span> Who?</h2>
 
                         <div class="row mt-3">
                             <div class="col-4">
-                                <label class="form-label">Rooms</label>
-                                <input type="number" class="form-control rounded-pill">
+                                <label class="form-label" for="rooms">Rooms</label>
+                                <input type="number" class="form-control rounded-pill" id="rooms">
                             </div>
 
                             <div class="col-4">
-                                <label class="form-label">Adults</label>
-                                <input type="number" class="form-control rounded-pill">
+                                <label class="form-label" for="adults">Adults</label>
+                                <input type="number" class="form-control rounded-pill" id="adults">
                             </div>
 
                             <div class="col-4">
-                                <label class="form-label">Children</label>
-                                <input type="number" class="form-control rounded-pill">
+                                <label class="form-label" for="children">Children</label>
+                                <input type="number" class="form-control rounded-pill" id="children">
                             </div>
                         </div>
                     </div>
@@ -232,6 +239,10 @@
             </div>
         </section>
 
+        <section>
+            <h2 class="section-title">Top destinations this month</h2>
+        </section>
+
 
     </main>
 
@@ -243,9 +254,12 @@
             <h2 class="footer-title">Book Your Travel</h2>
 
             <p class="address">
-                1400 Pennsylvania Ave. Washington, DC <br>
-                P: 24/7 customer support: 1-555-555-5555 <br>
-                E: booking@mail.com
+                78 Victoria Street<br>
+                London SW1E 6SQ<br>
+                United Kingdom<br><br>
+
+                Phone: +44 20 7946 1234<br>
+                Email: contact@bookyourtravel.com
             </p>
         </div>
 
@@ -254,10 +268,10 @@
             <h2 class="footer-title">Customer Support</h2>
 
             <ul class="footer-links">
-                <li><a href="../pages/Faq.html">FAQ</a></li>
-                <li><a href="../pages/How_do_I_make_a_reservation.html">How do I make a reservation?</a></li>
-                <li><a href="../pages/Payment_Options.html">Payment Options</a></li>
-                <li><a href="../pages/Booking_tips.html">Booking Tips</a></li>
+                <li><a href="pages/faq.html">FAQ</a></li>
+                <li><a href="pages/how_do_I_make_a_reservation.html">How do I make a reservation?</a></li>
+                <li><a href="pages/payment_Options.html">Payment Options</a></li>
+                <li><a href="pages/booking_tips.html">Booking Tips</a></li>
             </ul>
         </div>
 
@@ -266,10 +280,15 @@
             <h2 class="footer-title">Follow Us</h2>
 
             <ul class="social-menu">
-                <li><a href="https://www.facebook.com/">Facebook</a></li>
-                <li><a href="https://twitter.com/">Twitter</a></li>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Suivez-nous sur Facebook"><i
+                        class="icon fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.x.com" target="_blank" aria-label="Suivez-nous sur X"><i
+                        class="icon fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Suivez-nous sur Instagram"><i
+                        class="icon fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="Suivez-nous sur LinkedIn"><i
+                        class="icon fa-brands fa-linkedin"></i></a>
+
             </ul>
         </div>
 
@@ -299,10 +318,10 @@
 
     </footer>
 
-<!-- Lien Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    <!-- Lien Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
 
